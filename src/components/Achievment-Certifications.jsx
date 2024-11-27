@@ -11,8 +11,15 @@ const badges = [
       "https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2FQmoyzfBlTf-I9in2nSo2vQ%3Fidentity__email%3Dsashmithakavishka%2540gmail.com",
   },
   {
-    title: "Introduction to Web Development",
-    date: "Nov 23, 2024",
+    title: "Time Management for Personal & Professional Productivity",
+    date: "October 10, 2024",
+    image:
+      "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon.ico",
+    link: "https://coursera.org/share/6ea442c8a5b89fc2212d7d594a6fab37",
+  },
+  {
+    title: "Time Management for Personal & Professional Productivity",
+    date: "October 10, 2024",
     image:
       "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon.ico",
     link: "https://coursera.org/share/6ea442c8a5b89fc2212d7d594a6fab37",
@@ -21,7 +28,7 @@ const badges = [
 
 function AchievmentCertifications() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div className="grid grid-flow-col sm:grid-cols-2 gap-4  auto-cols-fr">
       {badges.map((badge, index) => (
         <div
           key={index}
