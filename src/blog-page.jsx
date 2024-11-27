@@ -91,11 +91,8 @@ const BlogPostDetail = ({ post, onBack }) => {
           className="prose prose-yellow max-w-none"
           dangerouslySetInnerHTML={{
             __html: post.content
-              .replace(/^## /gm, '<h2 class="text-2xl font-bold mt-6 mb-4">')
-              .replace(
-                /^### /gm,
-                '<h3 class="text-xl font-semibold mt-4 mb-3">'
-              )
+              .replace(/^## /gm, '<h2 class="text-xl font-semibold mt-6 mb-4">')
+              .replace(/^### /gm, '<h3 class="text-l  mt-4 mb-3">')
               .replace(/- /gm, '<li class="list-disc ml-6">')
               .replace(/\d+\. /gm, '<li class="list-decimal ml-6">')
               .replace(
