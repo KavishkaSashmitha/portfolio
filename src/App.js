@@ -5,6 +5,7 @@ import Proffesional from "./components/Proffesional";
 import Technical from "./components/Technical";
 import Education from "./components/Education";
 import Earned from "./components/Earned";
+import Projects from "./components/ProjectSection";
 
 // Navigation Component
 const Navbar = ({ activeSection, setActiveSection }) => {
@@ -124,6 +125,14 @@ const BlogSection = () => {
     </div>
   );
 };
+// Project Section
+const ProjectSection = () => {
+  return (
+    <div className="min-h-screen bg-yellow-50 ">
+      <Projects />
+    </div>
+  );
+};
 
 // Main App Component
 const KavishkaPortfolio = () => {
@@ -139,6 +148,8 @@ const KavishkaPortfolio = () => {
         return <VolunteerSection />;
       case "blog":
         return <BlogSection />;
+      case "projects":
+        return <ProjectSection />;
       default:
         return <HomeSection />;
     }
