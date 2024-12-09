@@ -1,18 +1,19 @@
-import React, { useState } from "react";
-import { Home, User, Code, Network, BookOpen } from "lucide-react";
-import BlogPage from "./blog-page";
-import Proffesional from "./components/Proffesional";
-import Technical from "./components/Technical";
-import Education from "./components/Education";
+import React, { useState } from 'react';
+import { Home, User, Code, Network, BookOpen } from 'lucide-react';
+import BlogPage from './blog-page';
+import Proffesional from './components/Proffesional';
+import Technical from './components/Technical';
+import Education from './components/Education';
+import ProjectSection from './components/ProjectSection';
 
 // Navigation Component
 const Navbar = ({ activeSection, setActiveSection }) => {
   const navItems = [
-    { icon: Home, label: "Home", section: "home" },
-    { icon: User, label: "About", section: "about" },
-    { icon: Code, label: "Projects", section: "projects" },
-    { icon: Network, label: "Volunteer", section: "volunteer" },
-    { icon: BookOpen, label: "Blog", section: "blog" },
+    { icon: Home, label: 'Home', section: 'home' },
+    { icon: User, label: 'About', section: 'about' },
+    { icon: Code, label: 'Projects', section: 'projects' },
+    { icon: Network, label: 'Volunteer', section: 'volunteer' },
+    { icon: BookOpen, label: 'Blog', section: 'blog' },
   ];
 
   return (
@@ -24,8 +25,8 @@ const Navbar = ({ activeSection, setActiveSection }) => {
             onClick={() => setActiveSection(item.section)}
             className={`p-2 rounded-full transition-all duration-300 ${
               activeSection === item.section
-                ? "bg-yellow-300 text-gray-800"
-                : "hover:bg-yellow-100 text-gray-600"
+                ? 'bg-yellow-300 text-gray-800'
+                : 'hover:bg-yellow-100 text-gray-600'
             }`}
           >
             <item.icon size={24} />
@@ -53,14 +54,14 @@ const HomeSection = () => (
       </p>
       <div className="mt-8 flex justify-center space-x-4">
         <a
-          href="https://linkedin.com"
+          href="https://linkedin.com/kavishka-sashmitha"
           target="_blank"
           className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition"
         >
           LinkedIn
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/kavishka-sashmitha"
           target="_blank"
           className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-900 transition"
         >
@@ -125,18 +126,20 @@ const BlogSection = () => {
 
 // Main App Component
 const KavishkaPortfolio = () => {
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState('home');
 
   const renderSection = () => {
     switch (activeSection) {
-      case "home":
+      case 'home':
         return <HomeSection />;
-      case "about":
+      case 'about':
         return <AboutSection />;
-      case "volunteer":
+      case 'volunteer':
         return <VolunteerSection />;
-      case "blog":
+      case 'blog':
         return <BlogSection />;
+      case 'projects':
+        return <ProjectSection />;
       default:
         return <HomeSection />;
     }
