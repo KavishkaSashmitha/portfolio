@@ -1,20 +1,26 @@
 [
-    {
-        "title": "Project One",
-        "description": "This is a description for project one.",
-        "image": "https://via.placeholder.com/300",
-        "link": "https://example.com/project-one"
-    },
-    {
-        "title": "Project Two",
-        "description": "This is a description for project two.",
-        "image": "https://via.placeholder.com/300",
-        "link": "https://example.com/project-two"
-    },
-    {
-        "title": "Project Three",
-        "description": "This is a description for project three.",
-        "image": "https://via.placeholder.com/300",
-        "link": "https://example.com/project-three"
-    }
+  {
+    "title": "Herbal Heaven",
+    "description": "An e-commerce platform for selling herbal products, featuring React for the frontend and a Node.js backend with an intuitive user interface and secure payment integration.",
+    "image": "https://via.placeholder.com/300",
+    "link": "https://example.com/herbal-heaven"
+  },
+  {
+    "title": "To-Do List App",
+    "description": "A simple React-based to-do list application that helps users organize tasks efficiently with features like task prioritization and status updates.",
+    "image": "https://via.placeholder.com/300",
+    "link": "https://example.com/todo-list-app"
+  },
+  {
+    "title": "SLIITXtreme 3.0 Website",
+    "description": "Contributed to the development of the sponsors' section for SLIITXtreme 3.0, leveraging React for a modern and responsive design.",
+    "image": "https://via.placeholder.com/300",
+    "link": "https://example.com/sliitxtreme-website"
+  },
+  {
+    "title": "Petition Data Manager",
+    "description": "A Flutter and Firebase-powered project for handling petitions, enhanced with a React-based web interface for monitoring and managing petition data.",
+    "image": "https://via.placeholder.com/300",
+    "link": "https://example.com/petition-data-manager"
+  }
 ]

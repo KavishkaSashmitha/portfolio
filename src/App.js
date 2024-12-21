@@ -4,7 +4,8 @@ import BlogPage from './blog-page';
 import Proffesional from './components/Proffesional';
 import Technical from './components/Technical';
 import Education from './components/Education';
-import ProjectSection from './components/ProjectSection';
+import Earned from './components/Earned';
+import Projects from './components/ProjectSection';
 
 // Navigation Component
 const Navbar = ({ activeSection, setActiveSection }) => {
@@ -54,14 +55,14 @@ const HomeSection = () => (
       </p>
       <div className="mt-8 flex justify-center space-x-4">
         <a
-          href="https://linkedin.com/kavishka-sashmitha"
+          href="https://www.linkedin.com/in/kavishka-sashmitha/"
           target="_blank"
           className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition"
         >
           LinkedIn
         </a>
         <a
-          href="https://github.com/kavishka-sashmitha"
+          href="https://github.com/kavishkasashmitha"
           target="_blank"
           className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-900 transition"
         >
@@ -83,6 +84,7 @@ const AboutSection = () => (
       <Technical />
       <Education />
     </div>
+    <Earned />
   </div>
 );
 
@@ -120,6 +122,14 @@ const BlogSection = () => {
   return (
     <div className="min-h-screen bg-yellow-50 ">
       <BlogPage />
+    </div>
+  );
+};
+// Project Section
+const ProjectSection = () => {
+  return (
+    <div className="min-h-screen bg-yellow-50 ">
+      <Projects />
     </div>
   );
 };
