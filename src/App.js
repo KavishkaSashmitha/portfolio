@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from 'react';
 import { Home, User, Code, Network, BookOpen } from 'lucide-react';
 import BlogPage from './blog-page';
