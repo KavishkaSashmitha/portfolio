@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+
 import projects from '../content/project.json';
 
 const ProjectCard = ({
@@ -35,7 +35,6 @@ const ProjectCard = ({
             rel="noopener noreferrer"
             className="px-3 py-2 bg-gray-800 text-white text-sm rounded-md flex items-center space-x-2 hover:bg-gray-700"
           >
-            <FaGithub />
             <span>GitHub</span>
           </a>
         )}
@@ -46,7 +45,6 @@ const ProjectCard = ({
             rel="noopener noreferrer"
             className="px-3 py-2 bg-blue-500 text-white text-sm rounded-md flex items-center space-x-2 hover:bg-blue-400"
           >
-            <FaExternalLinkAlt />
             <span>Live Demo</span>
           </a>
         )}
