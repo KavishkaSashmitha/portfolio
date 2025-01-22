@@ -15,6 +15,7 @@ function Technical() {
             "Firebase",
             "Tailwind CSS",
             "TypeScript",
+            "Next Js",
           ].map((skill) => (
             <span
               key={skill}

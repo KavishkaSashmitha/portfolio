@@ -6,6 +6,7 @@ import Technical from './components/Technical';
 import Education from './components/Education';
 import Earned from './components/Earned';
 import Projects from './components/ProjectSection';
+import Volunteer from './components/Volunteer';
 
 // Navigation Component
 const Navbar = ({ activeSection, setActiveSection }) => {
@@ -39,7 +40,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
 };
 
 // Home Section
-const HomeSection = () => (
+const HomeSection = ({ setActiveSection }) => (
   <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-yellow-50 to-yellow-100">
     <div className="text-center">
       <img
@@ -68,6 +69,12 @@ const HomeSection = () => (
         >
           GitHub
         </a>
+        <button
+          onClick={() => setActiveSection('projects')}
+          className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-900 transition"
+        >
+          My Few Works
+        </button>
       </div>
     </div>
   </div>
@@ -79,6 +86,17 @@ const AboutSection = () => (
     <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">
       About Me
     </h2>
+    <div className="description max-w-4xl mx-auto grid md:grid-cols gap-12 mb-6">
+      <p className="font-semibold text-gray-700">
+        A motivated Software Engineering student with expertise in full-stack
+        development, specializing in the MERN stack and Next.js. Currently an
+        intern at Tea Tang (Pvt) Ltd, contributing to the development of ERP
+        systems and real-world applications. Skilled in modern web technologies,
+        Agile methodologies, and building responsive, user-friendly interfaces.
+        Passionate about mastering React and advancing as a software engineer.
+      </p>
+    </div>
+
     <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
       <Proffesional />
       <Technical />
@@ -89,33 +107,7 @@ const AboutSection = () => (
 );
 
 // Volunteer Section
-const VolunteerSection = () => (
-  <div className="min-h-screen bg-yellow-50 p-16">
-    <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">
-      Volunteer Work
-    </h2>
-    <div className="max-w-4xl mx-auto space-y-8">
-      <div className="bg-white p-8 rounded-lg shadow-md">
-        <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-          Community Tech Education
-        </h3>
-        <p className="text-gray-600">
-          Conducting free coding workshops for underprivileged students,
-          teaching basic web development and programming concepts.
-        </p>
-      </div>
-      <div className="bg-white p-8 rounded-lg shadow-md">
-        <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-          Open Source Contributor
-        </h3>
-        <p className="text-gray-600">
-          Active contributor to open-source projects, focusing on improving
-          accessibility and performance of web applications.
-        </p>
-      </div>
-    </div>
-  </div>
-);
+const VolunteerSection = () => <Volunteer />;
 
 // Blog Section
 const BlogSection = () => {
@@ -141,7 +133,7 @@ const KavishkaPortfolio = () => {
   const renderSection = () => {
     switch (activeSection) {
       case 'home':
-        return <HomeSection />;
+        return <HomeSection setActiveSection={setActiveSection} />;
       case 'about':
         return <AboutSection />;
       case 'volunteer':

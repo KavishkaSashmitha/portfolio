@@ -1,49 +1,36 @@
-import React from "react";
+import React from 'react';
 
 const badges = [
   {
-    title: "GenAI 101 with Pieces",
-    date: "Nov 23, 2024",
+    title: 'GenAI 101 with Pieces',
+    date: 'Nov 23, 2024',
     image:
-      "https://api.badgr.io/public/assertions/QmoyzfBlTf-I9in2nSo2vQ/image",
-    link: "https://api.badgr.io/public/assertions/QmoyzfBlTf-I9in2nSo2vQ?identity__email=sashmithakavishka%40gmail.com",
+      'https://api.badgr.io/public/assertions/QmoyzfBlTf-I9in2nSo2vQ/image',
+    link: 'https://api.badgr.io/public/assertions/QmoyzfBlTf-I9in2nSo2vQ?identity__email=sashmithakavishka%40gmail.com',
     verifyLink:
-      "https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2FQmoyzfBlTf-I9in2nSo2vQ%3Fidentity__email%3Dsashmithakavishka%2540gmail.com",
+      'https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2FQmoyzfBlTf-I9in2nSo2vQ%3Fidentity__email%3Dsashmithakavishka%2540gmail.com',
   },
   {
-    title: "Time Management for Productivity",
-    date: "October 10, 2024",
+    title: 'Time Management for Productivity',
+    date: 'October 10, 2024',
     image:
-      "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/39/31c7a00bb411e4b2adb7c560fb2da9/UCI_MB_PI_WM_300x300_YellowonBlue.png?auto=format%2Ccompress&dpr=1&w=80&h=80",
-    link: "https://coursera.org/share/3ed2a7d2757be8a0537484ad28c25ab1",
+      'https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/39/31c7a00bb411e4b2adb7c560fb2da9/UCI_MB_PI_WM_300x300_YellowonBlue.png?auto=format%2Ccompress&dpr=1&w=80&h=80',
+    link: 'https://coursera.org/share/3ed2a7d2757be8a0537484ad28c25ab1',
   },
   {
-    title: "Business Analysis & Process Management",
-    date: "October, 2024",
+    title: 'Business Analysis & Process Management',
+    date: 'October, 2024',
     image:
-      "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/89/a0db8f3ea3417ca90d4f3a4ca1d73e/coursera-projectnetwork-purplesquare.png?auto=format%2Ccompress&dpr=1&w=80&h=80",
-    link: "https://coursera.org/share/6ea442c8a5b89fc2212d7d594a6fab37",
+      'https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/89/a0db8f3ea3417ca90d4f3a4ca1d73e/coursera-projectnetwork-purplesquare.png?auto=format%2Ccompress&dpr=1&w=80&h=80',
+    link: 'https://coursera.org/share/6ea442c8a5b89fc2212d7d594a6fab37',
   },
+
   {
-    title: "MongoDB Node.js Developer Path",
-    date: "December, 2023",
+    title: 'MongoDB Node.js Developer Path',
+    date: 'December, 2023',
     image:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQFKe8PwqzyHyA/company-logo_200_200/company-logo_200_200/0/1635171226992/mongodbinc_logo?e=1740614400&v=beta&t=K9rCN7MNeS2vwREjanbIyrQ8HvuXmGnx7pA6CZaHukA",
-    link: "https://learn.mongodb.com/c/L0pk83_yT7OkGJELbLID-w",
-  },
-  {
-    title: "MongoDB Node.js Developer Path",
-    date: "December, 2023",
-    image:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQFKe8PwqzyHyA/company-logo_200_200/company-logo_200_200/0/1635171226992/mongodbinc_logo?e=1740614400&v=beta&t=K9rCN7MNeS2vwREjanbIyrQ8HvuXmGnx7pA6CZaHukA",
-    link: "https://learn.mongodb.com/c/L0pk83_yT7OkGJELbLID-w",
-  },
-  {
-    title: "MongoDB Node.js Developer Path",
-    date: "December, 2023",
-    image:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQFKe8PwqzyHyA/company-logo_200_200/company-logo_200_200/0/1635171226992/mongodbinc_logo?e=1740614400&v=beta&t=K9rCN7MNeS2vwREjanbIyrQ8HvuXmGnx7pA6CZaHukA",
-    link: "https://learn.mongodb.com/c/L0pk83_yT7OkGJELbLID-w",
+      'https://media.licdn.com/dms/image/v2/C4D0BAQFKe8PwqzyHyA/company-logo_200_200/company-logo_200_200/0/1635171226992/mongodbinc_logo?e=1740614400&v=beta&t=K9rCN7MNeS2vwREjanbIyrQ8HvuXmGnx7pA6CZaHukA',
+    link: 'https://learn.mongodb.com/c/L0pk83_yT7OkGJELbLID-w',
   },
 ];
 

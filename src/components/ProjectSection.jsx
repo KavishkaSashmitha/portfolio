@@ -1,5 +1,6 @@
-import React from "react";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import React from 'react';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import projects from '../content/project.json';
 
 const ProjectCard = ({
   title,
@@ -7,21 +8,15 @@ const ProjectCard = ({
   technologies,
   githubLink,
   liveLink,
-  image,
 }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-xl">
-      {image && (
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-48 object-cover object-center"
-        />
-      )}
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
-        <div className="flex flex-wrap gap-2 mb-4">
+    <div className="flex flex-col items-center border border-gray-300 bg-white shadow-md p-5 rounded-lg hover:shadow-lg transform transition-transform hover:scale-105">
+      <h3 className="text-lg font-semibold text-gray-800 text-center mb-2">
+        {title}
+      </h3>
+      <p className="text-sm text-gray-600 text-center mb-3">{description}</p>
+      {technologies && (
+        <div className="flex flex-wrap gap-2 justify-center mb-3">
           {technologies.map((tech, index) => (
             <span
               key={index}
@@ -31,69 +26,51 @@ const ProjectCard = ({
             </span>
           ))}
         </div>
-        <div className="flex space-x-4">
-          {githubLink && (
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-black flex items-center"
-            >
-              <FaGithub className="mr-2" /> GitHub
-            </a>
-          )}
-          {liveLink && (
-            <a
-              href={liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-600 hover:text-green-800 flex items-center"
-            >
-              <FaExternalLinkAlt className="mr-2" /> Live Demo
-            </a>
-          )}
-        </div>
+      )}
+      <div className="flex space-x-4">
+        {githubLink && (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-2 bg-gray-800 text-white text-sm rounded-md flex items-center space-x-2 hover:bg-gray-700"
+          >
+            <FaGithub />
+            <span>GitHub</span>
+          </a>
+        )}
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3 py-2 bg-blue-500 text-white text-sm rounded-md flex items-center space-x-2 hover:bg-blue-400"
+          >
+            <FaExternalLinkAlt />
+            <span>Live Demo</span>
+          </a>
+        )}
       </div>
     </div>
   );
 };
 
 const ProjectShowcase = () => {
-  const projects = [
-    {
-      title: "Fun-fact-generator",
-      description:
-        "A comprehensive project management application with AI-driven insights and task optimization.",
-      technologies: ["React", "Node.js", "MongoDB", "AI", "Machine Learning"],
-      githubLink: "https://github.com/KavishkaSashmitha/Fun-fact-generator",
-      liveLink: "https://kavishkasashmitha.github.io/Fun-fact-generator/",
-      image: "/img/01.png",
-    },
-    {
-      title: "E-Commerce Platform",
-      description:
-        "Full-stack e-commerce solution with real-time inventory management and payment integration.",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Docker"],
-      githubLink: "https://github.com/yourusername/ecommerce-platform",
-      liveLink: "https://your-ecommerce-site.com",
-      image: "/api/placeholder/600/400",
-    },
-    {
-      title: "Social Media Analytics Dashboard",
-      description:
-        "Real-time social media analytics dashboard with comprehensive data visualization.",
-      technologies: ["React", "Python", "Django", "Chart.js", "WebSockets"],
-      githubLink: "https://github.com/yourusername/social-media-analytics",
-      image: "/api/placeholder/600/400",
-    },
-  ];
-
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-8">My Projects</h1>
-      <div className="grid md:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+    <div className="container mx-auto px-4 py-8 w-1/2">
+      <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">
+        My Projects
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        {projects.map((proj, index) => (
+          <ProjectCard
+            key={index}
+            title={proj.title}
+            description={proj.description}
+            technologies={proj.technologies || []}
+            githubLink={proj.githubLink}
+            liveLink={proj.link}
+          />
         ))}
       </div>
     </div>
