@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   ArrowLeft,
   Calendar,
-  Tag,
   Clock,
   ChevronRight,
   Search,

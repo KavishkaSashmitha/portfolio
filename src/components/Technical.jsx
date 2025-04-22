@@ -1,5 +1,5 @@
 import React from "react";
-import { Code, Database, Cpu, Layers, Globe, Workflow } from "lucide-react";
+import { Code, Database, Cpu, Globe, Workflow } from "lucide-react";
 
 function Technical() {
   const skillGroups = [
