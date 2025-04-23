@@ -32,7 +32,7 @@ const badges = [
     title: "MongoDB Node.js Developer Path",
     date: "December, 2023",
     image:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQFKe8PwqzyHyA/company-logo_200_200/company-logo_200_200/0/1635171226992/mongodbinc_logo?e=1740614400&v=beta&t=K9rCN7MNeS2vwREjanbIyrQ8HvuXmGnx7pA6CZaHukA",
+      "https://lh5.googleusercontent.com/NpCFEToPJTrK4VZ7i4-ggNHgWfOGnLYh7S059c25TOCZunHJv8ljPOHIjnoWB_Y1cxCIQ6dbXf-x4J9G2SXvuUEoo2C3r2tWj3qekRyZRQhk0JT-vGtnVk5oOEFGcRn8hQ-I3CH-5FZXgPJFlG7-4pI",
     link: "https://learn.mongodb.com/c/L0pk83_yT7OkGJELbLID-w",
     bgGradient: "from-green-600 to-blue-600",
   },
