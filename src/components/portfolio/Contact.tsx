@@ -12,7 +12,7 @@ const Contact = () => {
     },
     {
       title: "LinkedIn Path",
-      value: "/in/alexchen-nomad",
+      value: "/in/kavishka",
       href: "https://linkedin.com/in/kavishka-sashmitha",
       icon: "🤝",
       description: "Professional connections",
