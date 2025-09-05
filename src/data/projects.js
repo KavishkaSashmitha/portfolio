@@ -13,16 +13,14 @@ export const projects = [
   },
 
   {
-    title: "Learning Management System",
+    title: "Cake Bakery Web Application",
     description:
-      "An e-learning platform supporting course management, assignments, and student progress tracking.",
-    tech: ["React", "Firebase", "Tailwind"],
-    status: "Live Demo",
-    location: "📚 Academic Project",
+      "An Backery Item Selling platform supporting inventory management, display products, and sales progress tracking.",
+    tech: ["React", "Sanity", "Tailwind","Vite"],
+    status: "DEV",
+    location: "Real Client Project",
     story:
-      "Built to improve the way students and teachers collaborate in learning.",
-    demo: "https://example.com/lms-demo",
-    repo: "https://github.com/yourusername/lms-project",
+      "Under Development ",
   },
   {
     title: "Herbal Heaven",

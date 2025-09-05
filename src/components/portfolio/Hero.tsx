@@ -3,6 +3,7 @@ import heroImage from "@/assets/travel-coding-hero.jpg";
 
 const Hero = () => {
   return (
+    
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-paper-texture">
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -88,6 +89,7 @@ const Hero = () => {
         </div>
       </button>
     </section>
+
   );
 };
 
