@@ -46,7 +46,7 @@ const Hero = () => {
             </Button>
           </a>
           <a
-            href="https://www.linkedin.com/in/kavishkasashmitha/"
+            href="https://www.linkedin.com/in/kavishka-sashmitha/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1"
