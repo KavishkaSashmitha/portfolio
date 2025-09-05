@@ -2,27 +2,16 @@
 
 export const projects = [
   {
-    title: "POS",
+    title: "TMOD",
     description:
-      "An internal enterprise resource planning solution built during my internship. Helps streamline operations like inventory, finance, and HR within the company.",
-    tech: ["React", "MySQL", "Tailwind"],
-    status: "In Progress",
+      "An internal software for resource planning Tea built during my internship. Helps streamline operations like inventory, finance,and Manage Tea Standards within the company.",
+    tech: ["React", "Nextjs", "Tailwind", "ODOO-Backend", "Rest API"],
+    status: "IN USE",
     location: "🏢 Internship Project",
     story:
       "Developed as part of my journey to bring real business efficiency at Tea Tang.",
-    demo: "https://example.com/pos-demo",
-    repo: "https://github.com/yourusername/pos-project",
   },
-  {
-    title: "Herbal Heaven",
-    description: "Ecommerce Application ",
-    tech: ["React", "Node.js", "MongoDB"],
-    status: "Prototype",
-    location: "🌍 Community Driven",
-    story: "Academi",
-    demo: "https://example.com/herbal-heaven-demo",
-    repo: "https://github.com/yourusername/herbal-heaven",
-  },
+
   {
     title: "Learning Management System",
     description:
@@ -34,5 +23,16 @@ export const projects = [
       "Built to improve the way students and teachers collaborate in learning.",
     demo: "https://example.com/lms-demo",
     repo: "https://github.com/yourusername/lms-project",
+  },
+  {
+    title: "Herbal Heaven",
+    description:
+      "Ecommerce Application for Herbal Products Done During 2Year Project",
+    tech: ["React", "Node.js", "MongoDB", "Express"],
+    status: "Prototype",
+
+    story: "Academic Project",
+
+    repo: "https://github.com/KavishkaSashmitha/HerbalHeaven",
   },
 ];

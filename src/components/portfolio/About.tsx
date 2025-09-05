@@ -1,4 +1,7 @@
 const About = () => {
+  // Import profile image
+  const profileImage = "/profile.png"; // Using the profile image from build/img
+
   return (
     <section id="about" className="py-20 px-6 bg-gradient-map">
       <div className="max-w-6xl mx-auto">
@@ -14,7 +17,7 @@ const About = () => {
               </h3>
               <p className="text-lg text-card-foreground leading-relaxed">
                 From my early coding experiments to working as a Software
-                Engineering Associate  at{" "}
+                Engineering Associate at{" "}
                 <span className="font-semibold">Tea Tang (Pvt) Ltd</span>, my
                 path has been about continuous learning and growth. I’ve built
                 systems ranging from ERP modules to community-driven apps, and
@@ -58,24 +61,30 @@ const About = () => {
           </div>
 
           <div className="relative">
-            <div className="w-80 h-80 mx-auto bg-paper-texture rounded-3xl shadow-adventure flex items-center justify-center border-2 border-border/30 rotate-3">
-              <div className="w-64 h-64 bg-gradient-forest rounded-2xl flex flex-col items-center justify-center text-accent-foreground -rotate-3">
-                <div className="text-6xl mb-2">🌍</div>
-                <div className="font-handwrite text-2xl font-bold">Learn</div>
-                <div className="font-handwrite text-2xl font-bold">Build</div>
-                <div className="font-handwrite text-2xl font-bold">Inspire</div>
-              </div>
+            <div className="w-80 h-80 mx-auto bg-paper-texture rounded-3xl shadow-adventure flex items-center justify-center border-2 border-border/30 rotate-3 relative overflow-hidden group hover:rotate-1 transition-transform duration-300">
+              {/* Decorative overlay */}
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-accent/5 to-transparent opacity-70"></div>
+
+              {/* Full profile image filling frame */}
+              <img
+                src={profileImage}
+                alt="Kavishka Sashmitha"
+                className="w-full h-full object-cover rounded-3xl"
+              />
             </div>
 
-            {/* Icons around the card */}
-            <div className="absolute top-4 right-8 text-2xl animate-pulse">
+            {/* Floating icons */}
+            <div className="absolute top-4 right-8 text-2xl animate-float">
               💡
             </div>
-            <div className="absolute bottom-12 left-4 text-2xl animate-pulse delay-300">
+            <div className="absolute bottom-12 left-4 text-2xl animate-float delay-300">
               🚀
             </div>
-            <div className="absolute top-1/2 right-2 text-2xl animate-pulse delay-700">
+            <div className="absolute top-1/2 right-2 text-2xl animate-float delay-700">
               📚
+            </div>
+            <div className="absolute top-16 left-0 text-2xl animate-float delay-500">
+              ✨
             </div>
           </div>
         </div>
