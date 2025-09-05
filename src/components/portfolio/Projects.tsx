@@ -6,40 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { projects } from "@/data/projects";
 
 const Projects = () => {
-  const adventures = [
-    {
-      title: "POS",
-      description:
-        "An internal enterprise resource planning solution built during my internship. Helps streamline operations like inventory, finance, and HR within the company.",
-      tech: ["React", "MySQL", "Tailwind"],
-      status: "In Progress",
-      location: "🏢 Internship Project",
-      story:
-        "Developed as part of my journey to bring real business efficiency at Tea Tang.",
-    },
-    {
-      title: "Herbal Heaven",
-      description: "Ecommerce Application ",
-      tech: ["React", "Node.js", "MongoDB"],
-      status: "Prototype",
-      location: "🌍 Community Driven",
-      story:
-        "Academi",
-    },
-    {
-      title: "Learning Management System",
-      description:
-        "An e-learning platform supporting course management, assignments, and student progress tracking.",
-      tech: ["React", "Firebase", "Tailwind"],
-      status: "Live Demo",
-      location: "📚 Academic Project",
-      story:
-        "Built to improve the way students and teachers collaborate in learning.",
-    },
-  ];
-
   return (
     <section id="projects" className="py-20 px-6 bg-gradient-map">
       <div className="max-w-6xl mx-auto">
@@ -53,10 +22,10 @@ const Projects = () => {
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {adventures.map((project, index) => (
+          {projects.map((project, index) => (
             <Card
               key={project.title}
-              className="shadow-route hover:shadow-adventure transition-all duration-300 hover:scale-105 border-0 bg-card/90 backdrop-blur-sm border border-border/50 hover:border-accent/30 overflow-hidden"
+              className="shadow-route hover:shadow-adventure transition-all duration-300 hover:scale-105 bg-card/90 backdrop-blur-sm border border-border/50 hover:border-accent/30 overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader className="relative">
@@ -97,19 +66,33 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-2">
-                  <Button
-                    size="sm"
-                    className="flex-1 bg-primary text-accent-foreground hover:opacity-90"
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
                   >
-                    🔍 Explore
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 border-accent/40 hover:bg-accent hover:text-accent-foreground"
+                    <Button
+                      size="sm"
+                      className="w-full bg-gradient-to-r from-primary to-accent text-accent-foreground font-bold shadow-lg hover:scale-105 hover:from-accent hover:to-primary transition-all duration-200 border-2 border-accent/60"
+                    >
+                      <span className="mr-2">🔍</span> Explore Code
+                    </Button>
+                  </a>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
                   >
-                    🚀 Demo
-                  </Button>
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      className="w-full bg-gradient-to-r from-accent to-secondary text-primary font-bold shadow-md hover:scale-105 hover:from-secondary hover:to-accent transition-all duration-200 border-2 border-accent/60"
+                    >
+                      <span className="mr-2">🚀</span> Live Demo
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -117,13 +100,15 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-2 border-accent/40 hover:bg-accent hover:text-accent-foreground transition-all duration-300 backdrop-blur-sm"
-          >
-            🗂️ View All Projects
-          </Button>
+          <a href="#projects" className="inline-block">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-2 border-accent/40 bg-gradient-to-r from-secondary/60 to-accent/30 text-accent-foreground font-bold shadow-xl hover:bg-accent hover:text-accent-foreground transition-all duration-300 backdrop-blur-sm px-8 py-4 text-xl rounded-full"
+            >
+              🗂️ View All Projects
+            </Button>
+          </a>
         </div>
       </div>
     </section>
